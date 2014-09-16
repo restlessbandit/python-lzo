@@ -7,7 +7,7 @@
 
 SHELL = /bin/sh
 
-PYTHON = python2.2
+PYTHON = python2.7
 PYTHON = python
 
 all build:

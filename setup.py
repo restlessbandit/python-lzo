@@ -29,9 +29,11 @@ else:
     ##library_dirs.append("/usr/local/lib")
     ##runtime_library_dirs.append("/usr/local/lib")
 
-    # Add extra compile flag for MacOS X
+    # Add extra compile flag for MacOS X 
     if sys.platform[:-1] == "darwin":
         extra_link_args.append("-flat_namespace")
+        # Comment out if lzo not install using HomeBrew
+        include_dirs[-1] = "/usr/local/Cellar/lzo/2.06/include/lzo"
 
 
 ###############################################################################
